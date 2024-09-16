@@ -1,0 +1,13 @@
+.shopping-list {
+  list-style-type: none;
+  padding: 0;
+}
+.shopping-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.shopping-list-item input {
+  margin-right: 10px;
+}

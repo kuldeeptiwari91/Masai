@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light gray-blue background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures content does not overflow */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  margin: 0 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 180px; /* Limits the maximum width */
+  box-sizing: border-box;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
+
+.sorting-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sorting-section button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures text does not overflow */
+  text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+}
+
+.sorting-section button:hover {
+  background-color: #218838;
+}
+
+.graphs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bar-graph {
+  width: 45%;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bar {
+  margin: 5px 0;
+  text-align: left;
+  color: white;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  box-sizing: content-box; /* Ensures padding is not included in the width */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.bar .text {
+  background-color: #007bff; /* Blue background for text */
+  padding: 5px;
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+  display: inline-block; /* Ensures background only covers the text */
+}
+
+.bar .price-rating {
+  background-color: #4CAF50; /* Green background for prices and ratings */
+  padding: 5px;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+  display: inline-block; /* Ensures background only covers the text */
+}

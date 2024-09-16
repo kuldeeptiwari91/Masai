@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Data Dashboard</h1>
+        <div class="input-section">
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="number" id="productPrice" placeholder="Price" step="0.01">
+            <input type="number" id="productRating" placeholder="Rating" step="0.1" min="0" max="5">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+        <div class="sorting-section">
+            <button onclick="sortData('price')">Sort by Price</button>
+            <button onclick="sortData('rating')">Sort by Rating</button>
+        </div>
+        <div class="graphs">
+            <div class="bar-graph" id="priceGraph">
+                <h2>Price Graph</h2>
+                <div class="bars" id="priceBars"></div>
+            </div>
+            <div class="bar-graph" id="ratingGraph">
+                <h2>Rating Graph</h2>
+                <div class="bars" id="ratingBars"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
